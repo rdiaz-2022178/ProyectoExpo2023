@@ -1,0 +1,128 @@
+* {
+	-fx-primary-color: #007acc;
+	-fx-secondary-color: #4B6EAF;
+	-fx-accent-color: #B6FF00;
+	-fx-grey-color: #b9b9b9;
+	-fx-light-grey-color: #d1d1d1;
+	-fx-lightest-grey-color: #F9F9FB;
+    
+	-fx-focus-color: -fx-secondary-color;
+}
+
+.table-button {
+	-fx-background-color: -fx-primary-color;
+	-fx-cursor: hand;
+}
+.table-button:hover{
+	-fx-background-color: transparent;
+}
+.table-view {
+	-fx-border-color: transparent;
+	-fx-background-color: transparent; /* OR  -fx-background-insets: 0.0; */
+}
+.table-view .column-header-background,
+.table-view .column-header-background .filler,
+.table-view .corner {
+	-fx-background-color: transparent;
+}
+.table-view .column-header {
+	-fx-background-color: -fx-light-grey-color;
+	-fx-border-color: -fx-grey-color;
+}
+.table-view .column-header .label{
+	-fx-font-weight: bold; 
+	-fx-alignment: center;
+}
+/* This is just magic */
+.table-row-cell:filled {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent -fx-lightest-grey-color -fx-lightest-grey-color -fx-lightest-grey-color, transparent;
+	-fx-border-insets: 0, 1;
+}
+.table-row-cell:empty {
+	-fx-background-color: transparent;
+}
+.table-row-cell:filled:hover {
+	-fx-background-color: -fx-light-grey-color;
+}
+.table-row-cell:filled:selected:hover {
+	-fx-background-color: -fx-light-grey-color;
+}
+.table-row-cell:filled:selected {
+  	-fx-background-color: #eaeaea;
+ 	-fx-background-insets: 0.0;
+	-fx-background-radius: 0.0;
+}
+.table-row-cell:filled:selected .table-cell {
+	-fx-text-fill: black;
+}
+.table-view .cell:filled{
+	-fx-cell-size: 30;
+	-fx-alignment: center;
+}
+.check-box-table-cell > .check-box:selected .box .mark {
+	-fx-background-color: white;
+}
+.check-box-table-cell > .check-box:selected .box{
+	-fx-background-color: -fx-accent-color;
+}
+.table-view .placeholder .label {
+	-fx-text-fill: red;
+	-fx-padding:20px;
+}
+
+.btnRedireccion{
+    -fx-background-color:   #f3d0a5;
+}
+
+.btnRedireccion:hover{
+    -fx-background-color:  #f26422;
+}
+
+.menu-bar {
+    -fx-background-color: white;
+    -fx-opacity: 1;
+    -fx-border-width: 2.0;
+  
+
+}
+.menu-bar .label {
+    -fx-font-size: 18.0 pt;
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: white;
+    -fx-font-weight: bold; 
+    -fx-padding: 10.0px;
+
+}
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: -fx-primary-color ;
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-text-fill: -fx-third-color;
+    -fx-background: darkgray ;
+    
+
+}
+.menu-item .label{
+    -fx-font-size: 14.0 pt;
+    -fx-text-fill: black;
+}
+.menu-item .label:hover{
+    -fx-font-size: 14.0 pt;
+    -fx-background: black ;
+    -fx-text-fill: white;
+}
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color:#f7c331 ;
+    -fx-border-width: 0.2px;
+    -fx-border-color: black;
+    /** -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0 6.0 6.0 6.0, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; 
+    -fx-opacity: 0.9;*/
+}

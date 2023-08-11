@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" styleClass="pane" stylesheets="@../resource/TonysKinal.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rodrigodiaz.controller.ProgramadorController">
+   <children>
+      <Label layoutX="36.0" layoutY="64.0" prefHeight="36.0" prefWidth="383.0" text="Rodrigo Emmanuel Díaz García">
+         <font>
+            <Font name="Roboto Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="147.0" prefHeight="23.0" prefWidth="250.0" text="rodrigodiazg.work@gmail.com">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="35.0" layoutY="227.0" prefHeight="23.0" prefWidth="69.0" text="IN5AM">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="187.0" prefHeight="23.0" prefWidth="80.0" text="2022178">
+         <font>
+            <Font name="Roboto" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img" fitHeight="219.0" fitWidth="198.0" layoutX="522.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true" styleClass="img">
+         <image>
+            <Image url="@../image/ProgramadorImg.jpeg" />
+         </image></ImageView>
+      <Label layoutX="35.0" layoutY="106.0" prefHeight="27.0" prefWidth="160.0" text="Software Developer">
+         <font>
+            <Font name="Roboto Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="53.0" layoutY="296.0" prefHeight="56.0" prefWidth="103.0" styleClass="panel" text="JAVA" />
+      <ImageView fitHeight="36.0" fitWidth="56.0" layoutX="19.0" layoutY="14.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/iconoBack.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="195.0" layoutY="296.0" prefHeight="56.0" prefWidth="103.0" styleClass="panel" text="SQL" />
+      <Label alignment="CENTER" layoutX="334.0" layoutY="296.0" prefHeight="56.0" prefWidth="103.0" styleClass="panel" text="HTML" />
+      <Label alignment="CENTER" layoutX="478.0" layoutY="296.0" prefHeight="56.0" prefWidth="103.0" styleClass="panel" text="CSS" />
+      <Label alignment="CENTER" layoutX="619.0" layoutY="296.0" prefHeight="56.0" prefWidth="103.0" styleClass="panel" text="GIT" />
+      <ImageView fitHeight="43.0" fitWidth="69.0" layoutX="195.0" layoutY="206.0" onMouseClicked="#openLinkGit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/iconoGit.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="69.0" layoutX="398.0" layoutY="206.0" onMouseClicked="#openLinkLinkedin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/iconoLinkedin.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="69.0" layoutX="334.0" layoutY="206.0" onMouseClicked="#openLinkIg" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/iconoIG.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="69.0" layoutX="270.0" layoutY="206.0" onMouseClicked="#openLinkFb" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/iconoFB.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

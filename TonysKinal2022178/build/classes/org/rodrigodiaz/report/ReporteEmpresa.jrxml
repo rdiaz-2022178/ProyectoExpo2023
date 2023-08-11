@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reporteEmpresa" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="342a250a-5707-4cdc-85cc-78757a27d360">
+	<property name="ireport.zoom" value="1.650000000000001"/>
+	<property name="ireport.x" value="42"/>
+	<property name="ireport.y" value="0"/>
+	<property name="ireport.background.image.properties" value="true,true,0.25,-8,-8,0,0,628,628"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="Table Dataset 1" uuid="564e5965-c959-4641-881e-396f6ab19fc1"/>
+	<subDataset name="dataset1" uuid="ed14c373-be6b-451e-a8f3-3f601791a818"/>
+	<parameter name="codigoEmpresa" class="java.lang.String"/>
+	<parameter name="logo2" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[call sp_ListarEmpresas]]>
+	</queryString>
+	<field name="codigoEmpresa" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombreEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="direccion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="telefono" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="752" splitType="Stretch">
+			<elementGroup/>
+			<image>
+				<reportElement x="61" y="149" width="511" height="462" uuid="83db2fc5-d41e-4c87-a449-f3b381899f2c"/>
+				<imageExpression><![CDATA[$P{logo2}]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="243" y="34" width="94" height="32" uuid="e2cabbb7-ad2a-4847-a0e2-a0cd0f9df6d3"/>
+				<textElement>
+					<font size="20" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Empresa]]></text>
+			</staticText>
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="612" height="43" backcolor="#3399FF" uuid="85da5c9b-805b-4d9f-b193-39740d7470c2"/>
+				<image>
+					<reportElement x="20" y="0" width="122" height="43" uuid="a4f9b00e-9643-4d54-a4e9-f066cd47e970"/>
+					<imageExpression><![CDATA[$P{codigoEmpresa}]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="236" y="11" width="147" height="32" forecolor="#FFFFFF" uuid="f422d531-0ecf-4818-bcd9-dcf4bf6e6724"/>
+					<textElement>
+						<font size="20" isBold="true"/>
+					</textElement>
+					<text><![CDATA[TONY'S KINAL]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="185" y="26" width="100" height="20" uuid="4de3cf6c-51ad-493f-80a6-5e94cd66e10e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre Empresa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="324" y="26" width="100" height="20" uuid="1e853834-3246-44e7-8822-52d345f67add"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Teléfono]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="458" y="26" width="100" height="20" uuid="1d9708b6-e06b-45b5-86d5-b97d5a06762e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dirección]]></text>
+			</staticText>
+			<line>
+				<reportElement x="10" y="52" width="548" height="1" uuid="8661742b-ec4d-4d9f-a5e2-417516f02ba6"/>
+			</line>
+			<staticText>
+				<reportElement x="38" y="26" width="100" height="20" uuid="ae7d8310-bcc9-44c6-885d-4922d573c21a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Código Empresa]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="185" y="0" width="100" height="20" uuid="3ec7f1d7-bbfa-48ab-8f4c-1342b2a6cf03"/>
+				<textFieldExpression><![CDATA[$F{nombreEmpresa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="458" y="0" width="100" height="20" uuid="b38e78ec-cfc3-4df5-b3c6-86ccce5d9d75"/>
+				<textFieldExpression><![CDATA[$F{direccion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="324" y="0" width="100" height="20" uuid="9cec02a6-7d29-4ed9-98e2-8341e84b34d6"/>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="38" y="0" width="100" height="20" uuid="68ebd708-a5b0-4f17-90f4-e651adc8f69d"/>
+				<textFieldExpression><![CDATA[$F{codigoEmpresa}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="10" y="20" width="548" height="1" uuid="059b4876-9d4a-472b-8ad2-ac7f1a9de2f2"/>
+				<graphicElement>
+					<pen lineStyle="Dotted"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement x="472" y="34" width="100" height="20" uuid="53137f31-c831-484e-95f8-f9ee760fcb41"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="10" y="0" width="100" height="20" uuid="9b0f9b1a-6c2a-4cd9-a1da-463166b23e7c"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

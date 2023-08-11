@@ -1,0 +1,133 @@
+*{
+    -fx-primary-color: #faa04e ;
+    -fx-secondary-color: #5474fb ;
+    -fx-third-color: #303e37 ;
+    -fx-fourth-color: #f3d0a5;
+    -fx-fifth-color: #74c9b8;
+    -fx-sixth-color: #f26422;
+    -fx-seventh-color: #f9743c ;
+    -fx-primary2-color: #007acc;
+    -fx-secondary2-color: #4B6EAF;
+    -fx-light-grey2-color: #d1d1d1;
+    -fx-focus-color2: -fx-secondary-color;
+    /*-fx-base: dodgerblue; */
+    
+}
+.menu-bar {
+    -fx-background-color: white;
+    -fx-opacity: 1;
+    -fx-border-width: 2.0;
+  
+
+}
+.menu-bar .label {
+    -fx-font-size: 18.0 pt;
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: -fx-third-color;
+    -fx-font-weight: bold; 
+    -fx-padding: 10.0px;
+
+}
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: -fx-primary-color ;
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-text-fill: -fx-third-color;
+    -fx-background: darkgray ;
+    
+
+}
+.menuImg {
+    -fx-padding-left: 20px
+}
+.menu-item .label{
+    -fx-font-size: 14.0 pt;
+    -fx-text-fill: black;
+}
+.menu-item .label:hover{
+    -fx-font-size: 14.0 pt;
+    -fx-background: black ;
+    -fx-text-fill: white;
+}
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color:#f7c331 ;
+    -fx-border-width: 0.2px;
+    -fx-border-color: black;
+    /** -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0 6.0 6.0 6.0, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em; 
+    -fx-opacity: 0.9;*/
+}
+
+.label{
+    -fx-font-family: "Montserrat";
+    -fx-text-fill: white;
+}
+
+.pane{
+    -fx-background-color: #1d7fd8;
+}
+
+.img{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.panel{
+     -fx-font-family: "Montserrat";
+    -fx-background-color: white;
+    -fx-background-radius: 42px;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+
+
+
+}
+
+.panel:hover{
+    -fx-effect: drop-shadow(0 0 14px #f7c331);
+
+}
+
+.panel_main{
+    -fx-background-color: #1d7fd8;
+}
+
+.button1{
+    -fx-background-color: #e4d08a;
+    -fx-background-radius: 30 0 0 30;
+
+}
+
+.button1:hover{
+    -fx-background-color: #cd8e10;
+    -fx-background-radius: 30 0 0 30;
+}
+
+.button1:pressed{
+    -fx-background-color: #cca886;
+    -fx-background-radius: 30 0 0 30;
+}
+
+.btnPlantilla:hover{
+    -fx-opacity: 0.7;
+}
+
+
+.text-field {
+	-fx-accent: -fx-primary-color;
+	-fx-background-color: -fx-grey-color, white;
+	-fx-background-insets: 0, 0 0 1 0;
+	-fx-background-radius: 0;
+}
+.text-field:focused {
+	-fx-background-color: -fx-primary-color, white;
+}
+
+.btnRedireccion:hover{
+    -fx-background-color:  #f26422;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="panel_main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="800.0" styleClass="panel_main" stylesheets="@../resource/TonysKinal.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.rodrigodiaz.controller.MenuPrincipalController">
+   <children>
+      <MenuBar layoutX="-5.0" prefHeight="55.0" prefWidth="806.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Módulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresa" text="Empresas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProducto" text="Productos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoPlato" text="TipoPlatos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoEmpleado" text="TipoEmpleados" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Detalles">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductoPlato" text="Productos_Platos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServicioPlato" text="Servicios_Platos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServiciosEmpleados" text="Servicios_Empleados" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaProgramador" text="Programador" />
+            </items>
+          </Menu>
+            <Menu disable="true" mnemonicParsing="false" text="ㅤ" />
+            <Menu disable="true" mnemonicParsing="false" text="ㅤ" />
+            <Menu disable="true" mnemonicParsing="false" text="ㅤ" />
+            <Menu disable="true" mnemonicParsing="false" text="ㅤ" />
+            <Menu disable="true" mnemonicParsing="false" />
+            <Menu disable="true" mnemonicParsing="false" />
+            <Menu disable="true" mnemonicParsing="false" text="ㅤ" />
+            <Menu mnemonicParsing="false">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#login" text="Cerrar Sesión" />
+              </items>
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/iconoUsuario.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="500.0" fitWidth="510.0" layoutX="145.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logoSalchichaTonysSF.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
